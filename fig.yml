@@ -1,0 +1,13 @@
+web:
+  build: .
+  command: php -S 0.0.0.0:8000 -t /app
+  ports:
+    - "8000:8000"
+  links:
+    - db
+  volumes:
+    - .:/app
+db:
+  image: orchardup/mysql
+  environment:
+    MYSQL_DATABASE: wordpress
