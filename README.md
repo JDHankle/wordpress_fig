@@ -58,12 +58,8 @@ Reference](http://wp-cli.org/commands/).
 If you decide to go with the cli installer:
 
 ```shell
-fig run web wp core install --url="ip_of_container:8000" --title=mysite --admin_user=admin --admin_password=my_secret --admin_email='user@example.com'
+fig run web wp core install --url="localhost" --title=mysite --admin_user=admin --admin_password=my_secret --admin_email='user@example.com'
 ```
-
-You will need to replace `ip_of_container` with the container's
-address. For information on getting that address, skip to "Get
-Container IP".
 
 ## Web Method
 
@@ -73,14 +69,10 @@ If you decide to go with the web installer:
 fig up
 ```
 
-Open `http://ip_of_container:8000/` in the url field of your favorite
-browser. Make sure to replace `ip_of_container` with the containers IP
-address.
+Open `http://localhost/` in the url field of your favorite
+browser.
 
 Then complete the steps just like a normal WordPress web install.
-
-For more inromation on getting the IP address of the container, skip
-to "Get Container IP".
 
 ## Get Container IP
 
